@@ -1,0 +1,83 @@
+* {margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background: black;
+    color: white;
+    line-height: 1.6;
+}
+
+.about-container {
+    max-width: 1000px;
+    margin: 60px auto;
+    background: rgb(32, 32, 32);
+    padding: 40px;
+    border-radius: 12px;
+    border: 1px solid #ad2f2f;
+    box-shadow: 0 0 15px rgba(173, 47, 47, 0.3);
+}
+
+.about-container h1 {
+    font-size: 45px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.about-container h1 span {
+        color: #ad2f2f;
+}
+
+    about-container p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #dddddd;
+}
+
+.about-section {
+     margin-top: 40px;
+}
+
+.about-section h2 {
+    font-size: 30px;
+    color: #ad2f2f;
+    margin-bottom: 15px;
+}
+
+.team-section {
+     display: flex;
+    justify-content: left;
+    gap: 30px;
+    margin-top: 30px;
+ }
+
+.team-card {
+    width: 400px;
+    height: 300px;
+    background: rgb(20, 20, 20);
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #ad2f2f;
+    text-align: center;
+}
+
+.team-card img {
+     width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 2px solid #ad2f2f;
+    margin-bottom: 15px;
+}
+
+.team-card h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+    color: #ffffff;
+}
+
+.team-card p {
+     font-size: 15px;
+     color: #bbbbbb;
+}
