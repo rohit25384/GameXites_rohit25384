@@ -1,0 +1,216 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reviews | gameXites!</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:sans-serif;
+}
+
+body{
+    background:#000;
+    color:#fff;
+}
+
+/* container */
+.review_container{
+    max-width:1200px;
+    margin:40px auto;
+    padding:20px;
+}
+
+.review_container h1{
+    text-align:center;
+    font-size:45px;
+    margin-bottom:10px;
+}
+
+.review_container h1 span{
+    color:#ad2f2f;
+}
+
+.review_subtext{
+    text-align:center;
+    color:#ccc;
+    margin-bottom:30px;
+    font-size:18px;
+}
+
+/* review cards */
+.review_grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+.review_card{
+    background:rgb(32,32,32);
+    border:1px solid #ad2f2f;
+    border-radius:12px;
+    padding:20px;
+    text-align:center;
+    transition:0.35s;
+    transform:perspective(900px) translateZ(0);
+}
+
+.review_card:hover{
+    transform:perspective(900px) translateZ(30px) scale(1.04);
+    box-shadow:0 20px 45px rgba(173,47,47,0.45);
+}
+
+.review_card img{
+    width:100%;
+    height:180px;
+    border-radius:10px;
+    object-fit:cover;
+    margin-bottom:10px;
+}
+
+.review_card h3{
+    font-size:22px;
+    margin-bottom:10px;
+}
+
+/* stars */
+.stars{
+    color:#ffcc00;
+    font-size:20px;
+    margin:8px 0;
+}
+
+/* feedback section */
+.feedback_section{
+    margin-top:60px;
+    background:rgb(32,32,32);
+    padding:25px;
+    border-radius:12px;
+    border:1px solid #ad2f2f;
+}
+
+.feedback_section h2{
+    font-size:32px;
+    color:#ad2f2f;
+    margin-bottom:15px;
+    text-align:center;
+}
+
+.feedback_section label{
+    display:block;
+    margin:10px 0 5px;
+    font-size:16px;
+}
+
+.feedback_section input,
+.feedback_section textarea{
+    width:100%;
+    padding:12px;
+    background:transparent;
+    border:1px solid #ad2f2f;
+    border-radius:8px;
+    color:#fff;
+    font-size:16px;
+    outline:none;
+}
+
+.feedback_section textarea{
+    height:120px;
+    resize:none;
+}
+
+.feedback_section button{
+    width:100%;
+    padding:12px;
+    background:#ad2f2f;
+    border:none;
+    color:white;
+    font-size:18px;
+    border-radius:8px;
+    margin-top:15px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.feedback_section button:hover{
+    background:#d13b3b;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="review_container">
+
+    <h1>Game <span>Reviews</span></h1>
+    <p class="review_subtext">Read latest ratings and reviews for top games on GameXites!</p>
+
+    <div class="review_grid">
+
+        <div class="review_card">
+            <img src="Jason_and_Lucia_02_With_Logos_landscape.jpg">
+            <h3>GTA VI</h3>
+            <div class="stars">★★★★★</div>
+            <p>Massive open world, advanced AI, realistic physics, and next-gen gameplay immersion.</p>
+        </div>
+
+        <div class="review_card">
+            <img src="6337-3840x2160-desktop-4k-call-of-duty-background-photo.jpg">
+            <h3>Call of Duty</h3>
+            <div class="stars">★★★★☆</div>
+            <p>Fast-paced tactical shooting with updated weapons, improved graphics, and thrilling missions.</p>
+        </div>
+
+        <div class="review_card">
+            <img src="87448-3840x2160-desktop-4k-minecraft-wallpaper-photo.jpg">
+            <h3>Minecraft</h3>
+            <div class="stars">★★★★★</div>
+            <p>Endless creativity, exploration, and adventures. Perfect for every age group.</p>
+        </div>
+
+        <div class="review_card">
+            <img src="2214-3840x2160-desktop-4k-forza-horizon-wallpaper-image.jpg">
+            <h3>Forza Horizon</h3>
+            <div class="stars">★★★★☆</div>
+            <p>Stunning visuals, immersive open-world racing, and realistic car handling.</p>
+        </div>
+
+        <div class="review_card">
+            <img src="1215-3840x2160-desktop-4k-genshin-impact-background-photo.jpg">
+            <h3>Genshin Impact</h3>
+            <div class="stars">★★★★★</div>
+            <p>Beautiful open world, powerful characters, and smooth combat experience.</p>
+        </div>
+
+        <div class="review_card">
+            <img src="cyberpunk-city-street-night-with-neon-lights-futuristic-aesthetic.jpg">
+            <h3>Cyberpunk 2077</h3>
+            <div class="stars">★★★★☆</div>
+            <p>Deep storytelling, futuristic world, and improved performance after updates.</p>
+        </div>
+
+    </div>
+
+    <!-- Feedback Section -->
+    <div class="feedback_section">
+        <h2>Write Your Feedback</h2>
+
+        <label>Your Email</label>
+        <input type="email" placeholder="Enter your email">
+
+        <label>Your Feedback</label>
+        <textarea placeholder="Write your thoughts about any game..."></textarea>
+
+        <button>Submit Feedback</button>
+    </div>
+
+</div>
+
+</body>
+</html>
