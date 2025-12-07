@@ -20,8 +20,7 @@ span{
     gap: 20px;
 }
 
-
-
+/* <----- navigation bar ------> */
 /* sidebar */
 
 .sidebar{
@@ -91,7 +90,8 @@ span{
 }
 .nav ul li:hover{
     background-color: #ad2f2f;
-    box-shadow: 0 0 10px #ad2f2f;
+    box-shadow: 0 0 10px #000000;
+    transform: scale(1.1);
 }
 .nav ul li a{
     text-decoration: none;
@@ -100,6 +100,14 @@ span{
     padding: 10px;
     text-align: center;
 }
+
+
+
+
+                                                 /* <--- main content area --> */
+
+
+
 
 
 
@@ -122,12 +130,17 @@ span{
     text-align: center;
     border-bottom: #ad2f2f 1px solid;
 }
+
 .welcome h2{
     font-size: 30px;
 }
 
-.search{
+/* .search{
     margin-right: 20px;
+} */
+.search{
+    margin-left: auto;
+    margin-right: 10px;
 }
 .search input{
     color: #ffffff;
@@ -150,18 +163,19 @@ span{
 /* SEARCH BAR STYLING */
 
 .search {
+    padding-left: 20px;
     width: 300px;
     height: 45px;
     display: flex;
     align-items: center;
-    background: #1f1f1f;
+    background: transparent;
     border-radius: 30px;
     border: 1px solid #ad2f2f;
     transition: 0.3s ease;
 }
 
 .search:hover {
-    box-shadow: 0 0 12px rgba(173, 47, 47, 0.6);
+    box-shadow: 0 0 12px rgba(0, 0, 0, 1);
     transform: translateY(-2px);
 }
 
@@ -176,7 +190,7 @@ span{
 }
 
 .search input::placeholder {
-    padding-left: 10px ;
+
     color: #bbbbbb;
     font-size: 14px;
 }
@@ -193,13 +207,13 @@ span{
 
 .search button:hover {
     background: #d73f3f;
-    box-shadow: 0 0 10px rgba(173, 47, 47, 0.8);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
 }
 
 .search button img {
-    width: 20px;
+    width: 25px;
     height: 20px;
-    filter: brightness(100);
+    filter: invert(82%) sepia(7%) saturate(18%) hue-rotate(26deg) brightness(91%) contrast(90%);
 }
 
 
@@ -497,7 +511,42 @@ hr{
 .see_more:hover h3 {
     color: #e74a4a;
     transform: scale(1.15);
-    text-shadow: 0 0 10px rgba(75, 29, 29, 0.9);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 1);
 }
 
 
+/* toggle theme */
+
+/* Theme Toggle Button */
+.theme-toggle {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+#theme-toggle {
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    border: 1.5px solid #ad2f2f;
+    background: transparent;
+    color: #ffffff;
+    font-size: 22px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+#theme-toggle:hover {
+    background: #ad2f2f;
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(173, 47, 47, 0.5);
+}
+
+.toggle-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

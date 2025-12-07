@@ -69,7 +69,7 @@ span {
 /* Hover Effect */
 .game_card:hover {
     transform: perspective(900px) translateZ(30px) scale(1.04);
-    box-shadow: 0 20px 45px rgba(173, 47, 47, 0.45);
+    box-shadow: 0 20px 30px rgba(173, 47, 47, 0.45);
 }
 
 .more{
