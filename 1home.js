@@ -3,15 +3,15 @@
 const themeButton = document.getElementById('theme-toggle');
 const toggleIcon = document.querySelector('.toggle-icon');
 
-// Check what theme is saved (or use 'dark' as default)
+// Check what theme
 let currentTheme = localStorage.getItem('theme');
 if (!currentTheme) {
     currentTheme = 'dark';
 }
-// Initial application of the theme
+// Initially
 applyTheme(currentTheme);
 
-// condition for button is clicked
+// condition for button
 themeButton.addEventListener('click', function() {
     if (currentTheme === 'dark') {
         currentTheme = 'light';
